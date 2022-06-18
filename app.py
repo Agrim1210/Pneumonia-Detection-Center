@@ -24,10 +24,14 @@ def predict(testing_image):
         return "Patient is Normal."
 
     else:
-        return "Patient has Viral Pneumonia."
+        return "Patient has Pneumonia."
 
 
 def main():
+    st.sidebar.title("About")
+
+    st.sidebar.info(
+    "The application identifies the pneumonia in the picture. It was built using a Convolution Neural Network (CNN).")
     st.title('Pediatric-Pneumonia Detection')
     st.subheader(
         'This project will predict whether a person is suffering from Pneumonia using Radiograph images.')
